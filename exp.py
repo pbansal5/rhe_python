@@ -49,10 +49,10 @@ if (method == 0) :
     #print (ytKy,yty,trk2)
     
 else :
-    if (method = 1):
+    if (method == 1):
         sketching_matrix = np.random.normal(0,1/math.sqrt(snps),(snps,d))
         sk_out = np.dot(G,sketching_matrix)
-    elif (method = 2):
+    elif (method == 2):
         sk_out = G
     
     grm = np.dot(sk_out,sk_out.transpose())
